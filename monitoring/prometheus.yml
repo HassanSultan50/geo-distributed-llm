@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: 'gpt-node1'
+    static_configs:
+      - targets: ['node1-service:50051']
+  - job_name: 'gpt-node2'
+    static_configs:
+      - targets: ['node2-service:50052']
+  - job_name: 'mongodb'
+    static_configs:
+      - targets: ['mongodb-service:27017']

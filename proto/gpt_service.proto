@@ -1,0 +1,13 @@
+ syntax = "proto3";
+
+service GPTNode {
+  rpc Process (GPTRequest) returns (GPTResponse);
+}
+
+message GPTRequest {
+  repeated float input_tensor = 1;
+}
+
+message GPTResponse {
+  repeated float output_tensor = 1;
+}

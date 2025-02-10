@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node2-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node2
+  template:
+    metadata:
+      labels:
+        app: node2
+    spec:
+      containers:
+      - name: node2
+        image: sultanhassan/node2-service
+        ports:
+        - containerPort: 50052

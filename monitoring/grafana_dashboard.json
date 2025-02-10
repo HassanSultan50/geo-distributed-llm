@@ -1,0 +1,17 @@
+{
+    "dashboard": {
+      "annotations": {
+        "list": [{"name": "Alerts", "type": "dashboard"}]
+      },
+      "panels": [
+        {
+          "title": "Inference Latency",
+          "type": "graph",
+          "targets": [
+            {"expr": "rate(gpt_inference_latency[5m])", "legendFormat": "GPT Inference"}
+          ]
+        }
+      ]
+    }
+  }
+  

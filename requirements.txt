@@ -1,0 +1,8 @@
+torch
+transformers
+grpcio
+grpcio-tools
+protobuf
+kafka-python
+pymongo
+prometheus-client
